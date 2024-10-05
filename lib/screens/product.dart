@@ -47,7 +47,7 @@ class _ProductState extends State<Product> {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ClipRRect(
                 borderRadius: const BorderRadius.only(
@@ -103,12 +103,15 @@ class _ProductState extends State<Product> {
                         Expanded(
                           child: SizedBox(
                             height: 45,
-                            child: TextFormField(
-                              controller: _controller,
-                              keyboardType: TextInputType.number,
-                              decoration: InputDecoration(
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.circular(12),
+                            child: Container(
+                              width: 10,
+                              child: TextFormField(
+                                controller: _controller,
+                                keyboardType: TextInputType.number,
+                                decoration: InputDecoration(
+                                  border: OutlineInputBorder(
+                                    borderRadius: BorderRadius.circular(12),
+                                  ),
                                 ),
                               ),
                             ),
@@ -200,7 +203,7 @@ class _ProductState extends State<Product> {
                     ),
                     const Divider(
                       thickness: 1,
-                      color: Color.fromARGB(255, 59, 43, 43),
+                      color: Colors.grey,
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 5),
@@ -226,7 +229,7 @@ class _ProductState extends State<Product> {
                     ),
                     const Divider(
                         thickness: 1,
-                        color: Color.fromARGB(255, 59, 43, 43),
+                        color: Colors.grey,
                       ),
                       
                       ClipRRect(

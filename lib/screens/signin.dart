@@ -76,8 +76,9 @@ class Signin extends StatelessWidget {
                         width: double.infinity,
                         color: const Color(0xFF5383EC),
                         child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            const SizedBox(width: 34),
+                            const SizedBox(width: 5),
                             Image.asset('assets/images/google.png'),
                             const SizedBox(width: 30),
                             const Text(
@@ -100,8 +101,9 @@ class Signin extends StatelessWidget {
                       width: double.infinity,
                       color: const Color(0xFF4A66AC),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          const SizedBox(width: 36),
+                          const SizedBox(width: 5),
                           Image.asset('assets/images/facebook.png'),
                           const SizedBox(width: 30),
                           const Text(

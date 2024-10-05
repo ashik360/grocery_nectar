@@ -33,7 +33,7 @@ class Search extends StatelessWidget {
           ),
         ),
         actions: [
-          Image.asset('dot.png'),
+          IconButton(onPressed: (){}, icon: Icon(Icons.tune_outlined),),
         ],
       ),
       body: SingleChildScrollView(
@@ -43,10 +43,10 @@ class Search extends StatelessWidget {
             SingleChildScrollView(
               child: Column(
                 children: [
+                  const SizedBox(height: 20),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const SizedBox(height: 45),
                       ClipRRect(
                         borderRadius: BorderRadius.circular(12),
                         child: Container(
@@ -64,8 +64,13 @@ class Search extends StatelessWidget {
                                 padding: const EdgeInsets.symmetric(vertical: 8),
                                 child: Column(
                                   children: [
-                                    const Image(
-                                      image: AssetImage('assets/images/egg1.png'),
+                                    Container(
+                                      height: 80,
+                                      width: 80,
+                                      child: const Image(
+                                        image: AssetImage('assets/images/egg1.png'),
+                                        fit: BoxFit.fill,
+                                      ),
                                     ),
                                     const Padding(
                                       padding:
@@ -142,8 +147,13 @@ class Search extends StatelessWidget {
                                 padding: const EdgeInsets.symmetric(vertical: 8),
                                 child: Column(
                                   children: [
-                                    const Image(
-                                      image: AssetImage('assets/images/egg2.png'),
+                                    Container(
+                                      height: 80,
+                                      width: 80,
+                                      child: const Image(
+                                        image: AssetImage('assets/images/egg2.png'),
+                                        fit: BoxFit.fill,
+                                      ),
                                     ),
                                     const Padding(
                                       padding:
@@ -208,7 +218,6 @@ class Search extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const SizedBox(height: 45),
                       ClipRRect(
                         borderRadius: BorderRadius.circular(12),
                         child: Container(
@@ -226,8 +235,13 @@ class Search extends StatelessWidget {
                                 padding: const EdgeInsets.symmetric(vertical: 8),
                                 child: Column(
                                   children: [
-                                    const Image(
-                                      image: AssetImage('assets/images/egg3.png'),
+                                    Container(
+                                      height: 80,
+                                      width: 80,
+                                      child: const Image(
+                                        image: AssetImage('assets/images/egg3.png'),
+                                        fit: BoxFit.fill,
+                                      ),
                                     ),
                                     const Padding(
                                       padding:
@@ -304,8 +318,13 @@ class Search extends StatelessWidget {
                                 padding: const EdgeInsets.symmetric(vertical: 8),
                                 child: Column(
                                   children: [
-                                    const Image(
-                                      image: AssetImage('assets/images/egg4.png'),
+                                    Container(
+                                      height: 80,
+                                      width: 80,
+                                      child: const Image(
+                                        image: AssetImage('assets/images/egg4.png'),
+                                        fit: BoxFit.fill,
+                                      ),
                                     ),
                                     const Padding(
                                       padding:
@@ -370,7 +389,6 @@ class Search extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      const SizedBox(height: 45),
                       ClipRRect(
                         borderRadius: BorderRadius.circular(12),
                         child: Container(
@@ -386,64 +404,67 @@ class Search extends StatelessWidget {
                             children: [
                               Padding(
                                 padding: const EdgeInsets.symmetric(vertical: 8),
-                                child: SingleChildScroolview(
-                                  child: Column(
-                                    children: [
-                                      const Image(
+                                child: Column(
+                                  children: [
+                                    Container(
+                                      height: 80,
+                                      width: 80,
+                                      child: const Image(
                                         image: AssetImage('assets/images/egg5.png'),
+                                        fit: BoxFit.fill,
                                       ),
-                                      const Padding(
-                                        padding:
-                                            EdgeInsets.symmetric(vertical: 10),
-                                        child: Text(
-                                          'Organic Bananas',
-                                          style: TextStyle(
-                                            fontSize: 12,
-                                            fontWeight: FontWeight.w600,
-                                            color: Colors.black,
-                                          ),
-                                        ),
-                                      ),
-                                      const Text(
-                                        '7 pcs, Priceg',
+                                    ),
+                                    const Padding(
+                                      padding:
+                                          EdgeInsets.symmetric(vertical: 10),
+                                      child: Text(
+                                        'Organic Bananas',
                                         style: TextStyle(
-                                          fontSize: 10,
+                                          fontSize: 12,
                                           fontWeight: FontWeight.w600,
-                                          color: Colors.grey,
+                                          color: Colors.black,
                                         ),
                                       ),
-                                      const SizedBox(
-                                        height: 10,
+                                    ),
+                                    const Text(
+                                      '7 pcs, Priceg',
+                                      style: TextStyle(
+                                        fontSize: 10,
+                                        fontWeight: FontWeight.w600,
+                                        color: Colors.grey,
                                       ),
-                                      Padding(
-                                        padding: const EdgeInsets.all(4.0),
-                                        child: Row(
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.spaceBetween,
-                                          children: [
-                                            const Text(
-                                              '\$4.99',
-                                              style: TextStyle(
-                                                fontSize: 14,
-                                                fontWeight: FontWeight.w600,
-                                                color: Colors.black,
-                                              ),
+                                    ),
+                                    const SizedBox(
+                                      height: 10,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(4.0),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          const Text(
+                                            '\$4.99',
+                                            style: TextStyle(
+                                              fontSize: 14,
+                                              fontWeight: FontWeight.w600,
+                                              color: Colors.black,
                                             ),
-                                            ClipRRect(
-                                              borderRadius: BorderRadius.circular(12),
-                                              child: Container(
-                                                height: 35,
-                                                width: 35,
-                                                color: const Color.fromRGBO(
-                                                    53, 105, 55, 1),
-                                                child: const Icon(Icons.add),
-                                              ),
+                                          ),
+                                          ClipRRect(
+                                            borderRadius: BorderRadius.circular(12),
+                                            child: Container(
+                                              height: 35,
+                                              width: 35,
+                                              color: const Color.fromRGBO(
+                                                  53, 105, 55, 1),
+                                              child: const Icon(Icons.add),
                                             ),
-                                          ],
-                                        ),
+                                          ),
+                                        ],
                                       ),
-                                    ],
-                                  ),
+                                    ),
+                                  ],
                                 ),
                               ),
                             ],
@@ -468,8 +489,13 @@ class Search extends StatelessWidget {
                                 padding: const EdgeInsets.symmetric(vertical: 8),
                                 child: Column(
                                   children: [
-                                    const Image(
-                                      image: AssetImage('assets/images/egg6.png'),
+                                    Container(
+                                      height: 80,
+                                      width: 80,
+                                      child: const Image(
+                                        image: AssetImage('assets/images/egg6.png'),
+                                        fit: BoxFit.fill,
+                                      ),
                                     ),
                                     const Padding(
                                       padding:
@@ -531,7 +557,7 @@ class Search extends StatelessWidget {
                       const SizedBox(width: 10),
                     ],
                   ),
-                ],
+                  ],
               ),
             ),
             const SizedBox(width: 10),
